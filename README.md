@@ -12,7 +12,7 @@ DST_REMOTE="Box-UCD:IntBioTeam-GoogleBackupRclone/current"
 ARCHIVE_REMOTE="Box-UCD:IntBioTeam-GoogleBackupRclone/archive"
 LOG_FILE="$HOME/logs/rclone-gdrive-log-$STAMP.log"
 CHANGES_FILE="$HOME/logs/rclone-gdrive-changes-$STAMP.txt"
-LOG_REMOTE_DIR="Box-UCD:IntBioTeam-GoogleBackupRclone"
+LOG_REMOTE_DIR="Box-UCD:IntBioTeam-GoogleBackupRclone/logs"
 mkdir -p "$(dirname "$LOG_FILE")"
 
 # Keep Mac awake while this script runs
