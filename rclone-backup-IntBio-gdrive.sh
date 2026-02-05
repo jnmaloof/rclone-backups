@@ -14,7 +14,7 @@ mkdir -p "$(dirname "$LOG_FILE")"
 # Keep Mac awake while this script runs
 caffeinate -i -w $$ &
 
-rclone sync -c -n "$SRC_REMOTE" "$DST_REMOTE" \
+rclone sync -c "$SRC_REMOTE" "$DST_REMOTE" \
   --backup-dir "$ARCHIVE_REMOTE" \
   --suffix "__$STAMP" \
   --suffix-keep-extension \
